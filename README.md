@@ -61,14 +61,11 @@ flowchart TD
 ```mermaid
 flowchart TD
                 A[Raw Customer Data] --> B[Train Test Split]
-                B --> C[ColumnTransformer]
-                C --> C1[Numeric Features passthrough]
-                C --> C2[Categorical Features OneHotEncoder]
-                C1 --> D[Random Forest Classifier]
-                C2 --> D
+                B --> C[ColumnTransformer: num passthrough, cat OHE]
+                C --> D[Random Forest Classifier]
                 D --> E[scikit-learn Pipeline]
                 E --> F[Serialize with joblib]
-                F --> G[Load in FastAPI for real-time inference]
+                F --> G[Loaded by FastAPI]
 ```
 
 ## Project Structure

@@ -220,6 +220,8 @@ Response:
 
 ## Model Performance
 
+found in reports folder
+
 accuracy: 0.7104,
 precision: 0.6180785612872692,
 recall: 0.6707755521314843,
@@ -230,7 +232,3 @@ confusion_matrix:
 [641, 1306]
 
 Note: Performance metrics are reported on a held-out test set generated from the synthetic marketing conversion dataset. The primary objective of this project is to demonstrate an end-to-end machine learning deployment workflow rather than optimize a production model.
-
-## Future Improvements
-
-## Lessons Learned

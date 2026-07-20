@@ -1,4 +1,4 @@
-# Marketing Conversion Prediction API
+# Customer Conversion Prediction API
 
 A production-ready machine learning REST API for predicting customer conversion probability using FastAPI, Docker, and Render.
 
@@ -71,7 +71,7 @@ flowchart TD
 ## Project Structure
 
 ```text
-marketing-conversion-api/
+customer-conversion-prediction-api/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py
@@ -108,8 +108,8 @@ marketing-conversion-api/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/ileon4/marketing-conversion-api.git
-cd marketing-conversion-api
+git clone https://github.com/ileon4/customer-conversion-prediction-api.git
+cd customer-conversion-prediction-api
 ```
 
 ### Install Dependencies
@@ -131,16 +131,16 @@ Open: http://127.0.0.1:8000/docs
 ### Build Image
 
 ```bash
-docker build -t marketing-conversion-api .
+docker build -t customer-conversion-prediction-api .
 ```
 
 ### Run Container
 
 ```bash
 docker run \
-        --name marketing-conversion-container \
+        --name customer-conversion-container \
         -p 8000:8000 \
-        marketing-conversion-api
+        customer-conversion-prediction-api
 ```
 
 Open: http://127.0.0.1:8000/docs
@@ -148,7 +148,7 @@ Open: http://127.0.0.1:8000/docs
 ### Stop Container
 
 ```bash
-docker stop marketing-conversion-container
+docker stop customer-conversion-container
 ```
 
 ## API Endpoints
